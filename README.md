@@ -24,6 +24,6 @@ The following are the ranks using rank():<br/>
 ## Score Definition<br/>
 ![image](https://user-images.githubusercontent.com/98098222/159830847-c4c6bcea-b0d3-401f-bd8a-d562e155ed0d.png) <br/>
 ** The score.R file is responsible for computing the scores<br/>
-## Stem Cell Score Final Table<br/>
+## Stem Cells Score Final Table<br/>
 The score results are represented in tables one of which is the following stem cells score table: <br/>
 ![image](https://user-images.githubusercontent.com/98098222/159835014-cf09da7e-5752-4e50-8b16-65bb1ed1bfc8.png)<br/>
