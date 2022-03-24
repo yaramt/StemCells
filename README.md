@@ -18,7 +18,7 @@ ________________________________________________________________________________
 ## Ranking <br/>
 Every score has a set of selected genes. This is the table with the expression values of the selected genes for the skin score:<br/>
 ![image](https://user-images.githubusercontent.com/98098222/159832019-a7991412-91aa-41c0-9aa9-b7645c3d4359.png) <br/>
-We use the rank() function then we get the following ranks used in the score equation:<br/>
+The following are the ranks using rank():<br/>
 ![image](https://user-images.githubusercontent.com/98098222/159832124-217d2e4a-4f7d-4e69-9a10-f6bf909b57e3.png) <br/>
 
 ## Score Definition<br/>
