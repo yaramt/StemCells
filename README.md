@@ -22,5 +22,5 @@ The following are the ranks using rank():<br/>
 ![image](https://user-images.githubusercontent.com/98098222/159832124-217d2e4a-4f7d-4e69-9a10-f6bf909b57e3.png) <br/>
 
 ## Score Definition<br/>
-** The Score.R file is responsible for computing the scores<br/>
 ![image](https://user-images.githubusercontent.com/98098222/159830847-c4c6bcea-b0d3-401f-bd8a-d562e155ed0d.png) <br/>
+** The score.R file is responsible for computing the scores<br/>
