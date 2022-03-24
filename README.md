@@ -8,7 +8,7 @@ ________________________________________________________________________________
 - Data extracted from the GTEx project. A total of 20 healthy tissues: Whole Blood, Muscle – Skeletal, Lung, Skin – Sun Exposed (Lower Leg), Artery – Tribial, Thyroid, Adipose – Subcutaneous, Nerve – Tibial, Esophagus – Mucosa, Heart – Left Ventricle, Cells – Transformed Fibroblasts, Esophagus – Muscularis, Artery – Aorta, Adipose – Visceral (Omentum), Breast – Mammary Tissue, Heart – Atrial Appendage, Colon – Transverse, Stomach, Testis, Pancreas. <br/>
 - Data extracted from rnaseq_norm.tsv of stem cells and the three embryonic tissues: Stem Cells, Ectoderm, Endoderm, Mesoderm.<br/>
 - Data of 5 cancerous tissues extracted from TCGA (The Cancer Genome Atlas Program): AML, Colon, Liver, Ovarian, Sarcoma.<br/>
-**Since the data comes from various resources there is a need to reorganize it. The init files reorganize and normalize the data. <br/>
+** Since the data comes from various resources there is a need to reorganize it. The init files reorganize and normalize the data. <br/>
 ## Gene Selection<br/>
 Each specific tissue score equation uses a selection of genes. Only genes present in all data sets have been selected. T-tests were used to select genes with relatively high expression values.<br/>
 - Gene Selection for stem cell tissue score equation: The file t-tests-stemcells.R is responsible for finding the genes with high expression values in stem cells compared to cancerous tissues.<br/>
@@ -22,4 +22,5 @@ The following are the ranks using rank():<br/>
 ![image](https://user-images.githubusercontent.com/98098222/159832124-217d2e4a-4f7d-4e69-9a10-f6bf909b57e3.png) <br/>
 
 ## Score Definition<br/>
+** The Score.R file is responsible for computing the scores<br/>
 ![image](https://user-images.githubusercontent.com/98098222/159830847-c4c6bcea-b0d3-401f-bd8a-d562e155ed0d.png) <br/>
