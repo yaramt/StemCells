@@ -10,6 +10,6 @@ ________________________________________________________________________________
 - Data of 5 cancerous tissues extracted from TCGA (The Cancer Genome Atlas Program): AML, Colon, Liver, Ovarian, Sarcoma.
 ## Gene Selection<br/>
 Each specific tissue score equation uses a selection of genes. Only genes present in all data sets have been selected. T-tests were used to select genes with relatively high expression values.<br/>
-- Gene Selection for stem cell tissue score equation: The file t-tests-stemcells.R is responsible for finding the genes where stem cells have high expression values compared to the cancerous tissues.<br/>
-- Gene Selection for each of the embryonic tissues (mesoderm/ectoderm/endoderm) score equation: t-tests to find genes with high expression values compared to cancerous tissues are presented in the files t-tests-mesoderm.R, t-tests-ectoderm.R, t-tests-endoderm.R.<br/>
-- Gene Selection for each of the healthy tissues score equation: The files with the t-tests are named after each healthy tissue. Finding the highly expressed genes in the specific healthy tissue compared with stem cells and embryonic tissues.<br/>
+- Gene Selection for stem cell tissue score equation: The file t-tests-stemcells.R is responsible for finding the genes with high expression values in stem cells compared to cancerous tissues.<br/>
+- Gene Selection for each of the embryonic tissues (mesoderm/ectoderm/endoderm) score equation: The files t-tests-mesoderm.R, t-tests-ectoderm.R, t-tests-endoderm.R are responsible for finding the genes with high expression values in the specific embryonic tissue compared to the cancerous tissues.<br/>
+- Gene Selection for each of the healthy tissues score equation: The files with the t-tests are named after each healthy tissue. Finding the highly expressed genes in the specific healthy tissue compared to stem cells and embryonic tissues.<br/>
