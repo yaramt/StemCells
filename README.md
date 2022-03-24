@@ -16,3 +16,4 @@ Each specific tissue score equation uses a selection of genes. Only genes presen
 - Gene Selection for each of the healthy tissues score equation: The files with the t-tests are named after each healthy tissue. Finding the highly expressed genes in the specific healthy tissue compared to stem cells and embryonic tissues.<br/>
 _________________________________________________________________________________________________________________________________________________________________________
 ##Score Definition<br/>
+![image](https://user-images.githubusercontent.com/98098222/159830847-c4c6bcea-b0d3-401f-bd8a-d562e155ed0d.png)
