@@ -1,7 +1,7 @@
 # Cancer Stemness Score<br/>
 ## Project Definition<br/>
 The goal of this project is to find if tumors adopt stem cell characteristics.<br/>
-This project presents scoring equations. The data used represents gene expression values for various cell tissues. The goal is to create a score for the following tissues: stem cell tissues, embryonic cell tissues, and healthy tissues. The variables in each formula are substituted with the gene expression values of the following tissues: Cancerous tissue, healthy tissue, stem cell tissue, and embryonic cell tissue. In the end, a table is obtained with the scores according to each scoring method for each tissue. For example, if specific tissue scores high in stemness score this indicates it has possible similar characteristics to stem cells. Comparing the score values and examining the differences and similarities can show us the correlation between different tissues especially the cancerous tissues and stem cell tissues. Discovering that tumors adopt stem cell
+This project presents scoring equations. The used data represents gene expression values for various cell tissues. The goal is to create a score for the following tissues: stem cell tissues, embryonic cell tissues, and healthy tissues. The variables in each formula are substituted with the gene expression values of the following tissues: Cancerous tissue, healthy tissue, stem cell tissue, and embryonic cell tissue. In the end, a table is obtained with the scores according to each scoring method for each tissue. For example, if specific tissue scores high in stemness score this indicates it has possible similar characteristics to stem cells. Comparing the score values and examining the differences and similarities can show us the correlation between different tissues especially the cancerous tissues and stem cell tissues. Discovering that tumors adopt stem cell
 characteristics.<br/>
 _________________________________________________________________________________________________________________________________________________________________________
 ## Data<br/>
@@ -10,7 +10,7 @@ ________________________________________________________________________________
 - Data of 5 cancerous tissues extracted from TCGA (The Cancer Genome Atlas Program): AML, Colon, Liver, Ovarian, Sarcoma.<br/>
 ** Since the data comes from various resources there is a need to reorganize it. The init files reorganize and normalize the data. <br/>
 ## Gene Selection<br/>
-Each specific tissue score equation uses a selection of genes. Only genes present in all data sets have been selected. T-tests were used to select genes with relatively high expression values.<br/>
+Each specific tissue score equation uses a selection of genes. Only genes presented in all data sets have been selected. T-tests were used to select genes with relatively high expression values.<br/>
 - Gene Selection for stem cell tissue score equation: The file t-tests-stemcells.R is responsible for finding the genes with high expression values in stem cells compared to cancerous tissues.<br/>
 - Gene Selection for each of the embryonic tissues (mesoderm/ectoderm/endoderm) score equation: The files t-tests-mesoderm.R, t-tests-ectoderm.R, t-tests-endoderm.R are responsible for finding the genes with high expression values in the specific embryonic tissue compared to the cancerous tissues.<br/>
 - Gene Selection for each of the healthy tissues score equation: The files with the t-tests are named after each healthy tissue. Finding the highly expressed genes in the specific healthy tissue compared to stem cells and embryonic tissues.<br/>
@@ -25,5 +25,5 @@ The following are the ranks using rank():<br/>
 ![image](https://user-images.githubusercontent.com/98098222/159830847-c4c6bcea-b0d3-401f-bd8a-d562e155ed0d.png) <br/>
 ** The score.R file is responsible for computing the scores<br/>
 ## Stemness Score Final Table<br/>
-The score results are represented in tables one of which is the following stemness score table. It is clear that cancerous tissues have relatively high stemness scores: <br/>
+The score results are represented in tables, the following one is the stemness score table. It is clear that cancerous tissues have relatively high stemness scores: <br/>
 ![image](https://user-images.githubusercontent.com/98098222/159835014-cf09da7e-5752-4e50-8b16-65bb1ed1bfc8.png)<br/>
