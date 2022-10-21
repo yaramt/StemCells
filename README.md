@@ -11,9 +11,3 @@ ________________________________________________________________________________
 - Data extracted from the GTEx project. A total of 20 healthy tissues: Whole Blood, Muscle – Skeletal, Lung, Skin – Sun Exposed (Lower Leg), Artery – Tribial, Thyroid, Adipose – Subcutaneous, Nerve – Tibial, Esophagus – Mucosa, Heart – Left Ventricle, Cells – Transformed Fibroblasts, Esophagus – Muscularis, Artery – Aorta, Adipose – Visceral (Omentum), Breast – Mammary Tissue, Heart – Atrial Appendage, Colon – Transverse, Stomach, Testis, Pancreas. <br/>
 - Data extracted from rnaseq_norm.tsv of stem cells and the three embryonic tissues: Stem Cells, Ectoderm, Endoderm, Mesoderm.<br/>
 - Data of 5 cancerous tissues extracted from TCGA (The Cancer Genome Atlas Program): AML, Colon, Liver, Ovarian, Sarcoma.<br/>
-** Since the data comes from various resources there is a need to reorganize it. The init files reorganize and normalize the data. <br/>
-## Gene Selection<br/>
-Each specific tissue score equation uses a selection of genes. Only genes presented in all data sets have been selected. T-tests were used to select genes with relatively high expression values.<br/>
-- Gene Selection for stem cell tissue score equation: The file t-tests-stemcells.R is responsible for finding the genes with high expression values in stem cells compared to cancerous tissues.<br/>
-- Gene Selection for each of the embryonic tissues (mesoderm/ectoderm/endoderm) score equation: The files t-tests-mesoderm.R, t-tests-ectoderm.R, t-tests-endoderm.R are responsible for finding the genes with high expression values in the specific embryonic tissue compared to the cancerous tissues.<br/>
-- Gene Selection for each of the healthy tissues score equation: The files with the t-tests are named after each healthy tissue. Finding the highly expressed genes in the specific healthy tissue compared to stem cells and embryonic tissues.<br/>
